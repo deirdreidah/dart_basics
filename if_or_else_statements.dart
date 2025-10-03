@@ -2,7 +2,7 @@
 // if / else statements
 //Used when you want to check a condition and do something only if it’s true. 
 // If the condition is false, the program can do something else using else.
-
+import 'dart:io';
 void main() { 
   int age = 20; 
   if (age >= 18) { 
@@ -121,5 +121,56 @@ int add(int a, int b) {
  return a + b;
 }
  print(add(5, 3)); // 8
-}
 
+
+//d) Function with Optional Parameters 
+// You can give a default value for parameters that may not be provided. 
+void welcome(String name, [String title = ""]) { 
+print("Welcome $title $name"); 
+} 
+welcome("Gorret"); // Welcome  Gorret 
+welcome("Golden", "Ms."); // Welcome Ms. Golden 
+
+//4. Hands-On: Simple Calculator in Dart 
+//This is a practical program where a user enters two numbers and an operator (+, -, *, /) and Dart calculates the result. 
+ 
+  print("Enter first number:"); 
+  double num1 = double.parse(stdin.readLineSync()!); 
+ 
+  print("Enter operator (+, -, *, /):"); 
+  String op = stdin.readLineSync()!; 
+ 
+  print("Enter second number:"); 
+  double num2 = double.parse(stdin.readLineSync()!); 
+ 
+  double result; 
+  switch (op) { 
+    case '+': 
+      result = num1 + num2; 
+      break; 
+    case '-': 
+      result = num1 - num2; 
+      break; 
+    case '*': 
+      result = num1 * num2; 
+  
+ 
+   
+ 
+      break; 
+    case '/': 
+      result = num1 / num2; 
+      break; 
+    default: 
+      print("Invalid operator"); 
+      return; 
+  } 
+ 
+  print("Result: $result"); 
+} 
+ 
+//Example Run: 
+//Enter first number: 10 
+//Enter operator (+, -, *, /): * 
+//Enter second number: 5 
+//Result: 50 
