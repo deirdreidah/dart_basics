@@ -27,3 +27,4 @@ Map<String, int> marks = {"Math": 90, "English": 85};
 List<String> fav_colors = ["Red" , "Green" , "Grey"];
 
 //if our dictionary is having only strings we do Map<String , String> name = {}
+
