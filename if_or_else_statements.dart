@@ -113,7 +113,7 @@ greet();
 void greetUser(String name) {
  print("Hello, $name!");
 }
-greetUser("Gorret"); // Hello, Gorret!
+greetUser("Deirdre"); // Hello, Deirdre!
 
 //c) Function with Return Value
 // Functions can return a result.
@@ -128,8 +128,8 @@ int add(int a, int b) {
 void welcome(String name, [String title = ""]) { 
 print("Welcome $title $name"); 
 } 
-welcome("Gorret"); // Welcome  Gorret 
-welcome("Golden", "Ms."); // Welcome Ms. Golden 
+welcome("Navugga"); // Welcome  Navugga
+welcome("Navugga", "Ms."); // Welcome Ms. Navugga 
 
 //4. Hands-On: Simple Calculator in Dart 
 //This is a practical program where a user enters two numbers and an operator (+, -, *, /) and Dart calculates the result. 

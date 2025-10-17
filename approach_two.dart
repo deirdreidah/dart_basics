@@ -18,12 +18,8 @@ class Student {
 }
 
 void main() {
-  Student student1 = Student(name: "Didi", mark_one: 90, mark_two: 80, mark_three: 70);
+  // Testing with defaults
+  Student student1 = Student();
   print("Name: ${student1.name}");
   print("Average: ${student1.average()}");
-
-  // Testing with defaults
-  Student student2 = Student();
-  print("Name: ${student2.name}");
-  print("Average: ${student2.average()}");
 }
